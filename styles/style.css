@@ -9,30 +9,15 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-div {
-  border: 1px solid red;
-}
-
-header {
-  border: 1px solid red;
-}
-
-main {
-  border: 1px solid red;
-}
-
-section {
-  border: 1px solid red;
-}
-footer {
-  border: 1px solid red;
-}
-
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background: #f2f2f2;
+  z-index: -2;
+  display: flex;
+}
   /* выше установили ограничения для секции */
 }
 
@@ -43,15 +28,112 @@ footer {
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
+/*.header__square-pic {
   height: 568px;
   width: 568px;
-}
+}*/
 
 /* и элемента с модификатором вида ключ-значение */
+/*
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+*/
+
+.page {
+  border: 1px solid red;
+}
+
+div {
+  border: 1px solid red;
+}
+
+header {
+  border: 1px solid red;
+
+}
+
+main {
+  border: 1px solid red;
+}
+
+section {
+  border: 1px solid red;
+}
+
+footer {
+  border: 1px solid red;
+}
+
+.logo {
+  background-image: url("../images/logo_place_header.svg");
+  background-repeat: no-repeat;
+}
+
+.logo_place_header {
+  position: absolute;
+  width: 183px;
+  height: 32px;
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 4;
+}
+
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
+}
+
+
+.main-illustration {
+  background-image: url("../images/header-image.png");
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header-image {
+  width: 765px;
+  height: 608px;
+}
+
+.square-pic {
+  width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  z-index: 0;
+}
+
+.title {
+  margin-left: 64px;
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 6;
+}
+
+
+.subtitle {
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 3;
 }
