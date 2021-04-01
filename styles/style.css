@@ -1,13 +1,20 @@
-/*
+
 div {
   border: 1px solid red;
 }
-*/
 
-/*
-header {
+span {
   border: 1px solid red;
 }
+
+p {
+  border: 1px solid red;
+}
+
+h3 {
+  border: 1px solid red;
+}
+
 
 main {
   border: 1px solid red;
@@ -21,8 +28,11 @@ footer {
   border: 1px solid red;
 }
 
-*/
-
+/*Сылки*/
+.link {
+  color: #2f80ed;
+  text-decoration: none;
+}
 
 .page {
   min-width: 1100px;
@@ -33,22 +43,32 @@ footer {
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  border: 1px solid red;
   position: relative;
-  display: flex;
-  flex-direction: column;
+  /*  display: flex;
+    flex-direction: column;*/
+  padding: 0;
 }
 
-
+/*шапка*/
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   background: #f2f2f2;
   z-index: -2;
+  display: flex;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
+
+/*шапка флекс*/
+.header__title {
+}
+
+
+/*лого в шапке*/
 .logo_place_header {
   position: absolute;
   width: 183px;
@@ -56,13 +76,19 @@ footer {
   top: 30px;
   left: 64px;
   z-index: 4;
+  margin: 0;
+  padding: 0;
 }
 
+/*Лого в подвале*/
 .logo_place_footer {
   width: 183px;
   height: 35px;
+  margin: 0;
+  padding: 0;
 }
 
+/*мальчик*/
 .header-image {
   width: 765px;
   height: 608px;
@@ -70,13 +96,11 @@ footer {
   bottom: 0;
   right: 0;
   z-index: 1;
+  margin: 0;
+  padding: 0;
 }
 
-.header-image {
-  width: 765px;
-  height: 608px;
-}
-
+/*квадрат*/
 .square-pic {
   width: 568px;
   height: 568px;
@@ -85,38 +109,115 @@ footer {
   right: 0;
   top: 64px;
   z-index: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.header__title {
-  display: flex;
-}
-
+/*блок заголовка*/
 .title {
   margin-left: 64px;
   width: 730px;
   align-self: center;
   z-index: 6;
+  padding: 0;
 }
 
+
+/*заголовок текст*/
 .title_text {
-  margin: 0;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
+/*Описание блок*/
 .subtitle {
   width: 388px;
   position: absolute;
   left: 64px;
   bottom: 30px;
   z-index: 3;
+  margin: 0;
+  padding: 0;
 }
 
+/*Описание текст*/
 .subtitle__text {
-  margin: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
+  padding: 0;
 }
 
+
+
+
+
+
+
+
+/*Блок с таблицей*/
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*две колонки*/
+.two-columns {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/*первая колонка*/
+.two-columns__brief {
+  width: 175px;
+}
+
+/*текст в первой колонке*/
+.two-columns__brief_main {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+/* вторая колонка*/
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  margin: 0;
+  padding: 0;
+}
+
+/*Текст в параграфе*/
+.sort {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+/*блок со спаном*/
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.accent {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
