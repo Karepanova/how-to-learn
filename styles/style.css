@@ -1,40 +1,28 @@
-
-div {
-  border: 1px solid red;
+/*обнуление отсупов*/
+.no-indentation {
+  margin: 0;
+  padding: 0;
 }
 
-span {
-  border: 1px solid red;
+.flex_column {
+  display: flex;
+  flex-direction: column;
 }
 
-p {
-  border: 1px solid red;
+/*Блок с таблицей*/
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-h3 {
-  border: 1px solid red;
+.flex_row_space {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-
-main {
-  border: 1px solid red;
-}
-
-section {
-  border: 1px solid red;
-}
-
-footer {
-  border: 1px solid red;
-}
-
-/*Сылки*/
-.link {
-  color: #2f80ed;
-  text-decoration: none;
-}
-
-.page {
+.page_tuning {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
@@ -44,29 +32,18 @@ footer {
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
   position: relative;
-  /*  display: flex;
-    flex-direction: column;*/
   padding: 0;
 }
 
 /*шапка*/
-.header {
+.header_tuning {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   background: #f2f2f2;
-  z-index: -2;
   display: flex;
   position: relative;
-  margin: 0;
-  padding: 0;
 }
-
-
-/*шапка флекс*/
-.header__title {
-}
-
 
 /*лого в шапке*/
 .logo_place_header {
@@ -75,106 +52,73 @@ footer {
   height: 32px;
   top: 30px;
   left: 64px;
-  z-index: 4;
-  margin: 0;
-  padding: 0;
-}
-
-/*Лого в подвале*/
-.logo_place_footer {
-  width: 183px;
-  height: 35px;
-  margin: 0;
-  padding: 0;
 }
 
 /*мальчик*/
-.header-image {
+.main-illustration_image {
   width: 765px;
   height: 608px;
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 1;
-  margin: 0;
-  padding: 0;
 }
 
 /*квадрат*/
-.square-pic {
+.header__square-pic {
   width: 568px;
   height: 568px;
   background-color: #2f80ed;
   position: absolute;
   right: 0;
   top: 64px;
-  z-index: 0;
-  margin: 0;
-  padding: 0;
 }
 
 /*блок заголовка*/
-.title {
+.header__title {
   margin-left: 64px;
   width: 730px;
   align-self: center;
-  z-index: 6;
+  z-index: 1;
   padding: 0;
 }
 
-
-/*заголовок текст*/
-.title_text {
+/*заголовок текст+*/
+.header__title_text {
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  margin: 0;
-  padding: 0;
 }
 
 /*Описание блок*/
-.subtitle {
+.header__subtitle {
   width: 388px;
   position: absolute;
   left: 64px;
   bottom: 30px;
-  z-index: 3;
-  margin: 0;
-  padding: 0;
+  z-index: 1;
 }
 
 /*Описание текст*/
-.subtitle__text {
+.header__subtitle_text {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  margin: 0;
-  padding: 0;
 }
 
-
-
-
-
-
-
-
-/*Блок с таблицей*/
-.description {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+/*ссылки */
+.link_ref {
+  color: #2f80ed;
+  text-decoration: none;
 }
 
+/*ОПИСАНИЕ*/
 /*две колонки*/
 .two-columns {
   margin-top: 100px;
   margin-bottom: 100px;
   width: 80%;
   min-width: 784px;
-  display: flex;
-  justify-content: space-between;
-
 }
 
 /*первая колонка*/
@@ -187,25 +131,18 @@ footer {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  padding: 0;
-  margin: 0;
 }
 
 /* вторая колонка*/
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  margin: 0;
-  padding: 0;
 }
 
-/*Текст в параграфе*/
-.sort {
+.paragraph_font {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 0;
-  padding: 0;
 }
 
 /*блок со спаном*/
@@ -213,11 +150,261 @@ footer {
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
-  margin: 0;
-  padding: 0;
 }
 
+/*Строка со спаном*/
 .accent {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+
+/*блок с таблицей*/
+.digits {
+  align-items: center;
+}
+
+/*таблица*/
+.table {
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 0 auto 100px;
+}
+
+/*Заголовок таблицы*/
+.section-title {
+  width: 60%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+/*Текст заголовка*/
+.title__main {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*подзаголовок*/
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+}
+
+/*Первый блок в таблице*/
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+
+/*заголовок в карточке*/
+.heading__main {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/*текст в карточке*/
+.text__describe {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/*отсылка в карточке - переделать в модификатор*/
+.text__describe_size {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/*ФЕЙНМАН*/
+/*Блок Фейнман*/
+.feynman {
+  background: #f2f2f2 url("../images/feynman.png") left bottom no-repeat;
+  height: 790px;
+  position: relative;
+  align-items: center;
+}
+
+/*блок заголовка*/
+.feynman__title {
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+/*Заголовок фейнман*/
+.feynman__title_main {
+  width: 648px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  padding: 0;
+}
+
+/*подзаголовок фейнман*/
+.feynman__subtitle_text {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  padding: 0;
+}
+
+/*ссылка*/
+.feynman__link_ref {
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+/*КАУФМАН*/
+.kaufman_tuning {
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: #1f1f1f;
+  color: #f2f2f2;
+}
+
+/*Заголовок таблицы*/
+.section-title_theme_dark {
+  width: 60%;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  padding: 0;
+  z-index: 1;
+}
+
+/*Текст заголовка*/
+.section-title_title_main {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*подзаголовок*/
+.section-subtitle_theme_dark {
+  width: 60%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+/*таблица*/
+.table_theme_dark {
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 0 auto 90px;
+  z-index: 1;
+}
+
+/*Первый блок в таблице*/
+.table__cell_theme_dark {
+  width: 200px;
+  margin-top: 80px;
+}
+
+/*текст в карточке*/
+.text__describe_theme_dark {
+  margin: 20px 0 0 0;
+  padding: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.kaufman__triangle_img {
+  position: absolute;
+  top: 0;
+  right: -210px;
+  width: 877px;
+  height: 877px;
+}
+
+/*ПОДВАЛ*/
+.footer_tuning {
+  min-height: 350px;
+  background: #1f1f1f;
+  color: #f2f2f2;
+}
+
+/*основной блок*/
+.footer__columns {
+  width: 90%;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+/*первая колонка*/
+.footer__columns_content_copyright {
+  padding: 0;
+  flex-basis: 711px;
+  justify-content: space-between;
+}
+
+/*Лого в подвале*/
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
+}
+
+/*автор*/
+.footer__author {
+  padding: 0;
+  margin: 18px auto 18px 0;
+}
+
+/*автор текст*/
+.footer__author_text {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/*вторая колонка текст*/
+.footer__column-heading_text {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*блок с сылками о практикуме*/
+.footer__column-links {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.footer__social-icon_text {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/*блок с сылками соцсети*/
+.footer__column-link {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+/*модиф убирает подчеркивание + белый текст*/
+.footer_underlined {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+/*размер иконок + отступ*/
+.footer__social-icon_view {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
