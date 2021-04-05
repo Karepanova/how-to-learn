@@ -52,7 +52,6 @@
 
 /*блок заголовка*/
 .header__title {
-  margin-left: 64px;
   width: 730px;
   align-self: center;
   z-index: 1;
@@ -60,6 +59,7 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
+  margin: 0 0 0 64px;
 }
 
 /*Описание блок*/
@@ -72,6 +72,7 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
 }
 
 .header__link {
