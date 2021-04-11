@@ -1,0 +1,6 @@
+/*секция первая - две колонки*/
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
