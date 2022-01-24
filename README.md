@@ -13,3 +13,5 @@ How to learn
 * Анимации
 * Кейфремы
 * iframe работа с видео
+
+Ссылка: https://how-to-learn.karepanova.ru/
